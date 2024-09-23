@@ -19,6 +19,7 @@
                 HorizontalOptions="Center"
                 Clicked="DiceRoll"/>
             <FlexLayout
+                x:Name="FlexContainer"
                 Direction="Row">
                 <Image
                     x:Name="Dice0"
@@ -42,9 +43,11 @@
                     Source="k6_0.png" />
             </FlexLayout>
             <Label
+                x:Name="RollResultLabel"
                 Text="Wynik tego losowania: 0" 
                 HorizontalTextAlignment="Center"/>
             <Label
+                x:Name="GameResultLabel"
                 Text="Wynik gry: 0" 
                 HorizontalTextAlignment="Center"/>
             <Button
